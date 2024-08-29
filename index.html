@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+<form action="" method="get">
+    <fieldset>
+        <legend>Dados pessoais: </legend>
+        <label>Nome: <input name="nome" type="text" placeholder="Digite seu nome"></label><br>
+        <label>Senha: <input name="senha" type="password" placeholder="Digite sua senha"></label><br>
+        <label>E-mail: <input name="email" type="email" placeholder="Digite seu email"></label><br>
+        <label>Telefone: <input name="telefone" type="tel" placeholder="Digite seu telefone"></label><br><br>
+        <label>Sexo: </label><br>
+        <input type="radio" value="m" name="sexo"><label>Masculíno</label>
+        <input type="radio" value="f" name="sexo"><label>Feminíno</label>
+        <input type="radio" value="n" name="sexo"><label>Prefiro não informar</label><br><br>
+        <label>Data: <input name="data" type="date"><br>
+        <label>Hora: <input name="Hora" type="time"><br>
+        <label>Cor: <input name="cor" type="color"><br>
+        <label>Anexo: <input name="anexo" type="file"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Habilidades </legend>
+        <input type="checkbox" name="habilidades" value="html" id="html"><label for="html">HTML</label><br>
+        <input type="checkbox" name="habilidades" value="css" id="css"><label for="css">CSS</label><br>
+        <input type="checkbox" name="habilidades" value="js" id="js"><label for="js">Javascript</label>
+    </fieldset>
+    
+    <fieldset>
+            <legend>Estados: </legend>
+            <label>Escolha uma opção: </label>
+            <select>
+                <option value="">-- Selecione uma opção --</option>
+                <option value="São Paul">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+
+                
+            </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Carros: </legend>
+        <label>Escolha uma opção: </label>
+        <select>
+            <option value="">-- Selecione seu carro ---</option>
+            <optgroup label="volkswagen">
+                <option value="fox">Fox</option>
+                <option value="T-cros">T-cros</option>
+            </optgroup>
+
+            <optgroup label=Fiat>
+                <option value="uno">Uno</option>
+                <option value="palio">Palio</option>
+            </optgroup>
+
+            <optgroup label="Chevrolet">
+                <option value="celta">Celta</option>
+                <option value="celta">Spin</option>
+            </optgroup>
+        </select>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Frutas:</legend>
+        <input list="listafrutas" type="text" name="Frutas" placeholder="Digite sua fruta">
+        <datalist id="listafrutas">
+            <option valeu="abacaxi">Abacaxi</option>
+            <option valeu="laranja">Laranja</option>
+            <option valeu="maca">Maça</option>
+            <option valeu="manga">Manga</option>
+        </datalist>
+    </fieldset>
+
+    <fieldset>
+        <legend>Mensagem:</legend>
+            <textarea name="" id="" cols="90" rows="5"></textarea>
+        </datalist>
+    </fieldset>
+    <br>
+    <button>Enviar</button>
+    
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
